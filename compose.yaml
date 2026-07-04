@@ -1,0 +1,11 @@
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: chordaether-website
+    restart: unless-stopped
+
+    ports:
+      - "8085:80"
